@@ -189,13 +189,13 @@ class _AudioFileWaveformsState extends State<AudioFileWaveforms>
       decoration: widget.decoration,
       clipBehavior: widget.clipBehavior,
       child: GestureDetector(
-        onHorizontalDragUpdate:
-            widget.enableSeekGesture ? _handleDragGestures : null,
+        // onHorizontalDragUpdate:
+        //     widget.enableSeekGesture ? _handleDragGestures : null,
         onTapUp: widget.enableSeekGesture ? _handleScrubberSeekStart : null,
-        onHorizontalDragStart:
-            widget.enableSeekGesture ? _handleHorizontalDragStart : null,
-        onHorizontalDragEnd:
-            widget.enableSeekGesture ? (_) => _handleOnDragEnd() : null,
+        // onHorizontalDragStart:
+        //     widget.enableSeekGesture ? _handleHorizontalDragStart : null,
+        // onHorizontalDragEnd:
+        //     widget.enableSeekGesture ? (_) => _handleOnDragEnd() : null,
         child: ClipPath(
           // TODO: Remove static clipper when duration labels are added
           clipper: WaveClipper(0),
